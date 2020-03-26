@@ -26,10 +26,10 @@ public class Main {
 		//logging in takes a while
 		DiscordApi api = new DiscordApiBuilder()
 			    .setAccountType(AccountType.CLIENT)
-			    .setToken("NjkyNDc4ODY2MzIwNjU0MzQ3.XnvHbg.pRdvAcVdZLypsTv4XnaplHdouOg") //token of "Buster" the trivia buster. 
+			    .setToken("NjkyNDc4ODY2MzIwNjU0MzQ3.Xnz7kg.2RN8a8vuhuUuToqaCffbciKPows") //token of "Buster" the trivia buster. 
 			    .login().join();
         //Buster's email: jannine11@ztahoewgbo.com
-		//Buster's Password: Leon2003
+		//Buster's Password: Leon2003!
 		
         //This listener does the busting
 		List<BusterChannelListener> busting = new ArrayList<BusterChannelListener>();
