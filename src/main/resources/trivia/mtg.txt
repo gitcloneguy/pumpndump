@@ -1,0 +1,86 @@
+What phase starts your turn?`The Draw phase
+What phase comes after your untap phase?`The upkeep phase
+What phase comes after your combat phase?`The postcombat main phase`Main phase`Second main`postcombat main
+Can you cast sorceries during your end phase?`No
+If you have 8 cards in hand (and your hand limit is the usual 7), during what phase would you discard a card?`Cleanup phase`cleanup`end phase
+Which of the following does not appear on an Amonkhet punch card?\na)-1/-1 counter\nBrick counter\nExerted reminder\nFlood counter`Flood Counters`Flood
+What is the maximum starting life total for Vanguard?`38`Thirty Eight
+What is the minimum starting life total for Vanguard?`12`Twelve
+Which instant from Odyssey has art that was originally illustrated for a creature card, but was flipped upside-down?`Flame Burst`+3
+What does card type not appear in Gatecrash?`Basic Lands`lands
+Zendikar is the home plane of the Kor, but Zendikar isn't the first time we met this race. In what set or plane did we first meet them?`Tempest/Rath`Tempest`Rath`+2
+What is the maximum hand size at the end of your turn?`7`Seven
+In the case of a battle between a Deft Duelist, a 2/1 with First Strike, and a Bloodbraid Elf, a 3/2, what would the outcome be?`The Bloodbraid Elf dies`Bloodbraid Dies
+What metal is Karn made of?`Argentum`+2
+One card was printed in Alpha without a casting cost. What was it?`Cyclopean Tomb`+3
+Most colors had a common creature for 2 colorless and 1 mana of the appropriate color in Alpha. Which color didn't?`Green`+2
+Which card was the first to have its art changed? (Not counting the misprinted Serindib Efreet, the added basic lands, or multiple illustrations of the same card in the same set.)`Plateau`+3
+Which card's name is an anagram of the name of the creator of Magic?`Phelddagrif`+2
+There are quite a few numbers when playing Magic, and sometimes things can get pretty complex. Faerie Swarm is a blue creature whose power and toughness are both equal to the number of blue permanents you control. If you have ten basic islands, three blue creatures (including Faerie Swarm) and two blue enchantments in play and have already played a blue spell in the same turn, what would Faerie Swarm's power and toughness be?`5`Five
+Mirrodin was the first non-core set in the new card frame, so at its time, there was no Modern format just yet. However one artifact card in the block made an immediate impact in the Vintage format because of its ability to stop the Moxen and Black Lotus. What was this card?`Chalice of the Void`Chalice`+3
+Kamigawa made legendary permanents, particularly creatures, the focus of the block. Of the 163 legendary cards, one was printed with two different pictures for a good reason - which one?`Brothers Yamazaki`+2
+In which set were the first Five planeswalker cards introduced to the game?`Lorwyn
+Which planeswalker is the only one to be currently banned in Modern, as of 2020?`Oko, Theif of Crowns`Oko the Broko`Oko
+Based on Greek mythology, Theros block chronicles the rise and downfall of a planeswalker to the seat as fifteenth god of the plane. Which one of the two-colored lesser gods began the story of Theros as a planeswalker and ended up slain in the end?`Xenagos, God of Revels`Xenagos
+Which resident of Tarkir ultimately betrayed their clan and became part of a dragonlord's necklace?`Tasigur, the Golden Fang`Tasigur
+Which artifact has the following flavor text?\n*Gerrard*: "But it doesn't do anything" *Hanna*: "No- it **does** nothing."`Null Rod`+2
+What staple blue card was removed from the base set in Eighth Edition?`Counterspell`+2
+Which plane was the original that hosted most of the early sets, and suffered a Phyrexian invasion?`Dominaria`+2
+Which plane was one giant metropolis run by ten guilds?`Ravnica`+2
+Which plane was made entirely of metal and had a separate sun for each of the five colours?`Mirrodin`+2
+Which plane had been shattered into five shards`Alara`+2
+Which plane had strange energies that caused the land to hover and rearrange?`Zendikar`+2
+At the end of the summer of 1994, which card had more copies in existence than any other?`Atog`+3 
+What card was the only one ever printed with both versions of the white mana symbol?`Prismatic Ward`+3
+Which of the following didn't first appear in Unglued? -Coin flipping -Creature token cards -Full-art lands -Referencing multiplayer play in rules text`Coin flipping
+What appears fully or partially in the art of every kicker spell in the set Invasion?`The Coalition Symbol`Coalition
+Torment is the set where one color (black) had the highest percentage ever in a set. Of the 143 cards, what percentage was black?`28% (40 cards)`28%`40 cards
+Which character, who appears in Zendikar, was originally created for the Duels of the Planeswalker video game?`Nissa Revane`Nissa
+Which creature type combination doesn't show up in Gatecrash? -Crocodile Frog -Human Ooze -Cyclops Warrior -Spirit Advisor`Cyclops Warrior
+What made Squee Immortal?`Squee's Toy
+In how many languages is Magic: The Gathering currently printed?`11`Eleven
+What is the greatest number energy symbols to appear on any one card?`14`Fourteen
+What are alternate cards, often with lucrative and unique designs, called?`Masterpieces`Masterpiece
+The pivotal event of the story of Shadows of Innistrad is the madness and ensuing unmaking of the protector archangel of the plane. What was the name of this archangel?`Avacyn
+Who is Nicol Bolas' brother?`Ugin, the Spirit Dragon`Ugin
+This figure forged and originally weilded the Blackblade, a terrible sword forged with blood and souls. Who is he?`Dakkon`Belzenlok
+Name one of the Brothers that fought in The Brother's War`Misha and Urza`Mishra`Urza`
+What causes Dominaria's Ice Age?`The Golgothian Sylex`Sylex`+3
+Who originally leads the Phyrexians?`Yawgmoth
+Which character, who makes their last appearence in *War of the Spark,* had their planeswalker spark ignited by Jodah's Mirror?`Jaya Ballard`Jaya
+Who causes **The Mending**?`Freyalise
+This character created many things, among which are the Metathran. Who was he?`Urza
+Which artificial plane do the Phyrexians use to invade Dominaria?`Rath`+3
+The entire plane of Rath is geared to expand and take over other worlds. The expanding substance used also forms the entire plane. What is it?`Flowstone`+3
+What kindom was wiped from existence to repair the damage Teferi subjected to the timestream?`Zhalfir
+Who's immortal soul, as opposed to thousands of moral ones, was used to power Urza's Soul Bombs?`Tevesh Szat`Szat`+3
+Who created the Nine Titans, large war-machines dedicated to fight the Phyrexians?`Urza
+Which weapon eventually slays Yawgmoth and the majority of the Phyrexians, but not before Yawgmoth claims billions of Dominarans?`The Legacy
+Which substance pollutes Argentum, Karn's perfect all-metal plane?`Phyrexian Oil`Oil
+After exposure to the Phyrexian Oil left behind by Karn, tha warden of Argentum goes insane. Who is he?`Memnarch
+What lesser creatures of Mirrodin are named after its former warden?`Memnites`Memnite
+The Mycosynth was a strange metalling fungus that released spores. What did the Mycosynth's spores, and by extension the Mycosynth itself, create?`New Phyrexia`Phyrexia
+The collective impact of the Sylex Blast, the Shard, the Tolarian time travel experiments and the Rathi Overlay cause what on Dominaria?`The Temporal Crisis`A Temporal Crisis
+The Great Mending has many effects. What happens to travel between planes because of it?`It stops working`Stops`Doesn't work
+What interplanar organization does Jace Beleren become an employee of?`Infinite Consortium`+3
+The unification of what gives Nicol Bolas back most of the power he lost in the Mending?`The Shards of Alara`+3
+Name one of the two types of mana Nissa Revane does not use?`Red/White`Red`White
+Who is directly responsible for the ignition of Chandra's planeswalker spark on Kaladesh?`Dhiren Baral`Baral`+2
+After attacking Liliana, who is cursed by the Veil?`Garruk Wildspeaker`Garruk
+After discovering shocking answers concerning Ravnica's Implicit Maze, what does Jace do?`Erase his memory`Erase memory`Lose time
+Who organizes Jace's eventual running of the Implicit Maze?`Niv-Mizzet`Niv Mizzet
+After completing the Implicit Maze, what did the runner become?`The Living Guildpact`Guildpact
+After hearing a Tormenting Voice and stumbling across a portal in an ancient tomb, who does Sarkhan save?`Ugin, the Spirit Dragon`Ugin
+Who messes with the timeline of Tarkir, leading to the rise of the Dragonlords and death of Tarkir's humans?`Sarkhan Vol`Sarkhan
+Ulamog is meant to be captured in a network of what magical artifact?`Hedron`Hedrons
+Which of the three Eldrazi Titans is not incinerated and destroyed in the Battle for Zendikar?`Emrakul
+Why does Nahiri call Emrakul to Innistrad?`For Revenge on Sorin Markov`Revenge
+Who calls Emrakul to Innistrad?`Nahiri
+In what is Emrakul sealed?`Innistrad's Moon`The Moon
+What has Nicol Bolas been creating on Amonkhet for quite some time now?`The Eternals
+What are both Progenitus and The Bog Entity`Worldsouls`Worldsoul`+2
+Who does Davriel Cane surrender The Bog Entity to, thus causing them to Ascend?`Tacenda Verlasen`Tacenda
+What legendary spell does Nicol Bolas cast to further increase his power?`The Elderspell`Elderspell
+Which planeswalker, who originally trusts Bolas, is the first to die to the Elderspell?`Domri Rade`Domri
+Name a planeswalker other than Domri Rade that dies in War of the Spark`Gideon Jura or Dack Fayden`Gideon Jura`Gideon`Dack Feyden`Dack
+While most believe Nicol Bolas to be dead, Ugin actually imprisons him where?`The Meditation Plane
