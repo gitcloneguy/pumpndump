@@ -26,7 +26,7 @@ public class Main {
 		//logging in takes a while
 		DiscordApi api = new DiscordApiBuilder()
 			    .setAccountType(AccountType.CLIENT)
-			    .setToken("NjkyNDc4ODY2MzIwNjU0MzQ3.Xnz7kg.2RN8a8vuhuUuToqaCffbciKPows") //token of "Buster" the trivia buster. 
+			    .setToken("NjkyNDc4ODY2MzIwNjU0MzQ3.Xnz-Jg.cxq1tR7kK5XTm6uMwui7-0QIsKc") //token of "Buster" the trivia buster. 
 			    .login().join();
         //Buster's email: jannine11@ztahoewgbo.com
 		//Buster's Password: Leon2003!
