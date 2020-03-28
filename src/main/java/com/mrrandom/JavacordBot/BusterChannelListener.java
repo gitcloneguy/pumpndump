@@ -32,7 +32,8 @@ public class BusterChannelListener {
 		String q = Main.getQuestion(m.getContent());
 		System.out.println(q + " | "+qna.getOrDefault(q, "no answer found"));
 		if(q != null) {
-			if(Main.doable) try {Thread.sleep(500+(long)(Math.random()*700));} catch(Exception e) {}
+			if(Main.mode == 1) try {Thread.sleep(500+(long)(Math.random()*700));} catch(Exception e) {}
+			if(Main.mode == 2) try {Thread.sleep(1000+(long)(Math.random()*1000));} catch(Exception e) {}
 			channel.sendMessage(qna.get(q));
 		}
 	}

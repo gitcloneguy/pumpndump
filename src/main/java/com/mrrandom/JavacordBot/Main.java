@@ -17,7 +17,7 @@ import org.javacord.api.event.message.MessageCreateEvent;
 import org.javacord.api.listener.message.MessageCreateListener;
 
 public class Main {
-	public static boolean doable = false;
+	public static int mode = 0;
 	private static HashMap<String, String>  qna;
 	public static void main(String[] args) throws FileNotFoundException {
 		qna = new HashMap<String, String>();
@@ -41,8 +41,8 @@ public class Main {
 			            	event.getMessage().delete();
 			            }
 			        	if (event.getMessageContent().toLowerCase().startsWith("/possible")) {
-			        		doable = !doable;
-			        		event.getChannel().sendMessage("Winning against me is now "+(doable ? "possible :)" : "***impossible***"));
+			        		mode++; if(mode >= 3) mode = 0; 
+			        		event.getChannel().sendMessage("Winning against me is now "+currentMode());
 			            	event.getMessage().delete();
 			        	}
 			        	if (event.getMessageContent().toLowerCase().startsWith("/trigger")) {
@@ -71,6 +71,14 @@ public class Main {
         System.out.println("Logged in!");
         //api.updateStatus();
     }
+	public static String currentMode() {
+		switch(mode) {
+		case 0: return "***impossible***";
+		case 1: return "possible :)";
+		case 2: return "probable [i am human now]";
+		}
+		return "[error]";
+	}
 	public static void newBuster(List<BusterChannelListener> busting, TextChannel tc, Message m) {
 		//construct new buster
     	BusterChannelListener bcl = new BusterChannelListener(qna,tc,m);
