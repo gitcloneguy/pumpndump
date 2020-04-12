@@ -26,9 +26,10 @@ public class Main {
 		//logging in takes a while
 		DiscordApi api = new DiscordApiBuilder()
 			    .setAccountType(AccountType.CLIENT)
-			    .setToken("NjkyNDc4ODY2MzIwNjU0MzQ3.Xnz-Jg.cxq1tR7kK5XTm6uMwui7-0QIsKc") //token of "Buster" the trivia buster. 
+			    .setToken("Njk0Njc5Nzk3OTU5NDkxNzM1.XoPJvw._R_fD-8ocpeLOwAj-8ts_Q5zhd0") //token of "Buster" the trivia buster. 
 			    .login().join();
-        //Buster's email: jannine11@ztahoewgbo.com
+		//Buster's email: ted27@rgdoubtdhq.com
+        //Buster's email token: 100618816a175a1913c01ce59b5b3491
 		//Buster's Password: Leon2003!
 		
         //This listener does the busting
@@ -36,6 +37,8 @@ public class Main {
 		api.addMessageCreateListener(new MessageCreateListener() {
 					@Override
 					public void onMessageCreate(MessageCreateEvent event) {
+						if(!api.getYourself().equals(event.getMessage().getAuthor().asUser().get()))
+								return;
 			        	if (event.getMessageContent().equalsIgnoreCase("/ping")) {
 			                event.getChannel().sendMessage("Pong!");
 			            	event.getMessage().delete();
