@@ -14,13 +14,13 @@ import org.javacord.api.listener.message.MessageCreateListener;
 
 public class Main {
 	public static void main(String[] args) throws FileNotFoundException {
-		Scanner tokenScan = new Scanner(new File("token.txt"));
-		String token = tokenScan.next(); tokenScan.close();
+		//Scanner tokenScan = new Scanner(new File("src/main/resources/token.txt"));
+		//String token = tokenScan.next(); tokenScan.close();
 		
 		
 		DiscordApi api = new DiscordApiBuilder()
 			    //.setAccountType(AccountType.CLIENT) UNCOMMENT if not selfbot
-			    .setToken(token) //token of "Buster" the trivia buster. 
+			    .setToken("NzAyNjc5Nzg4Mjc5ODI0Mzk1.XqD1Rg.8O_UcnP5dNV5dU_M2sUKroQhvu4") //token of "Buster" the trivia buster. 
 			    .login().join();
 		
         //This listener does the busting
