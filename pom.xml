@@ -20,13 +20,27 @@
 	<build>
 	    <plugins>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
-			</plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-assembly-plugin</artifactId>
+      <executions>
+        <execution>
+          <goals>
+            <goal>attached</goal>
+          </goals>
+          <phase>package</phase>
+          <configuration>
+            <descriptorRefs>
+              <descriptorRef>jar-with-dependencies</descriptorRef>
+            </descriptorRefs>
+            <archive>
+              <manifest>
+                <mainClass>com.mrrandom.JavacordBot.Main</mainClass>
+              </manifest>
+            </archive>
+          </configuration>
+        </execution>
+      </executions>
+    </plugin>
 		</plugins>
   </build>
 </project>
