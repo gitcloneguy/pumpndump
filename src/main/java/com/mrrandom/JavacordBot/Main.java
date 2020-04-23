@@ -2,6 +2,7 @@ package com.mrrandom.JavacordBot;
 
 
 import java.io.FileWriter;
+import java.io.BufferedWriter;
 import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
 import java.io.IOException;
@@ -48,17 +49,25 @@ public class Main {
 	
 	public static void banUser(DiscordApi api, User usr) {  //actually bans them everywhare + says it to bot feed
 		System.out.println("Goodbye, "+usr.getDiscriminatedName());
-		logToFile(usr, api);
 		
-		for(Server s : api.getServers())
+		for(Server s : api.getServers()) {
 			s.banUser(usr);
+			try {
+				logToFile(usr, api);
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
 	}
 	
-	public static void logToFile(User usr, DiscordApi api) {
+	public static void logToFile(User usr, DiscordApi api) throws IOException  {
+		
+		FileWriter fwrite = new FileWriter("banlog.txt");
+		BufferedWriter bw = new BufferedWriter(fwrite);
 		
 		try {
-		      FileWriter fwrite = new FileWriter("banlog.txt");
 		      fwrite.write("User banned: "+usr.getDiscriminatedName());
+		      bw.newLine();
 		      fwrite.close();
 		     
 		    } catch (IOException e) {
