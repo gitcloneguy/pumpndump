@@ -49,7 +49,7 @@ public class Main {
 	
 	public static void banUser(DiscordApi api, User usr) {  //actually bans them everywhare + says it to bot feed
 		System.out.println("Goodbye, "+usr.getDiscriminatedName());
-		Event.getServerTextChannelById(617028579611377674L).ifPresent(channel -> {
+		api.getServerTextChannelById(617028579611377674L).ifPresent(channel -> {
 			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName());
 			});
 		for(Server s : api.getServers()) {
