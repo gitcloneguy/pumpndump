@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.mrrandom.JavacordBot</groupId>
 	<artifactId>pumpndump</artifactId>
-	<version>0.0.1</version>
+	<version>1.0.1</version>
 	<name>pumpndump</name>
 	<description>A discord bot made with Javacord</description>
 	<properties>
