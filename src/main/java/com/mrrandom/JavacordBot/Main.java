@@ -1,15 +1,15 @@
 package com.mrrandom.JavacordBot;
 
-import java.io.File;
+
+import java.io.FileWriter;
 import java.io.FileNotFoundException;
 import java.util.NoSuchElementException;
-
+import java.io.IOException;
 
 import org.javacord.api.DiscordApi;
 import org.javacord.api.DiscordApiBuilder;
 import org.javacord.api.entity.server.Server;
 import org.javacord.api.entity.user.User;
-import org.javacord.api.event.Event;
 import org.javacord.api.event.message.MessageCreateEvent;
 import org.javacord.api.listener.message.MessageCreateListener;
 
@@ -22,6 +22,7 @@ public class Main {
 			    //.setAccountType(AccountType.CLIENT) UNCOMMENT if not selfbot
 			    .setToken("NzAyNjc5Nzg4Mjc5ODI0Mzk1.XqD1Rg.8O_UcnP5dNV5dU_M2sUKroQhvu4") 
 			    .login().join();
+		
 		
         //This listener does the busting
 		api.addMessageCreateListener(new MessageCreateListener() {
@@ -41,13 +42,29 @@ public class Main {
 		
         System.out.println("Logged in! Part of "+api.getServers().size()+" servers");
         System.out.println("Invite link is: "+api.createBotInvite());
+        
     }
+	
+	
 	public static void banUser(DiscordApi api, User usr) {  //actually bans them everywhare + says it to bot feed
 		System.out.println("Goodbye, "+usr.getDiscriminatedName());
-
-		event.getServerChannelById(long 617028579611377674).sendMessage("Goodbye, "+usr.getDiscriminatedName());
+		logToFile(usr, api);
 		
 		for(Server s : api.getServers())
 			s.banUser(usr);
 	}
+	
+	public static void logToFile(User usr, DiscordApi api) {
+		
+		try {
+		      FileWriter fwrite = new FileWriter("banlog.txt");
+		      fwrite.write("User banned: "+usr.getDiscriminatedName());
+		      fwrite.close();
+		     
+		    } catch (IOException e) {
+		      System.out.println("oOf. something oOOOfed.");
+		      e.printStackTrace();
+		    }
+	}
+	
 }
