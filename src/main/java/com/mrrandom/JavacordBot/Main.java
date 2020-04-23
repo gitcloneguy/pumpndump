@@ -26,7 +26,7 @@ public class Main {
 		//logging in takes a while
 		DiscordApi api = new DiscordApiBuilder()
 			    .setAccountType(AccountType.CLIENT)
-			    .setToken("Njk0Njc5Nzk3OTU5NDkxNzM1.XoPJvw._R_fD-8ocpeLOwAj-8ts_Q5zhd0") //token of "Buster" the trivia buster. 
+			    .setToken("NzAyNjc5Nzg4Mjc5ODI0Mzk1.XqDnMw.GOy3ebwpEBu6P4PAnSZ9XbdEtn4") //token of "Buster" the trivia buster. 
 			    .login().join();
 		//Buster's email: ted27@rgdoubtdhq.com
         //Buster's email token: 100618816a175a1913c01ce59b5b3491
@@ -128,7 +128,7 @@ public class Main {
 	        }
 	    }
 	}
-	private static final char[] garbage = {' ','\'','ï','»','¿','+','-','.','\\','\"','/',',',';',':','*','(',')','@','!','?'};
+	private static final char[] garbage = {' ','\'','Ã¯','Â»','Â¿','+','-','.','\\','\"','/',',',';',':','*','(',')','@','!','?'};
 	public static String simplifyString(String in) {
 		for(char toRemove : garbage) {
 			in = in.replace(toRemove, garbage[0]);
