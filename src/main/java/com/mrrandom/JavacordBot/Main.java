@@ -50,7 +50,7 @@ public class Main {
 	public static void banUser(DiscordApi api, User usr) {  //actually bans them everywhare + says it to bot feed
 		System.out.println("Goodbye, "+usr.getDiscriminatedName());
 		api.getServerTextChannelById(617028579611377674L).ifPresent(channel -> {
-			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName());
+			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName()+":honey_pot:");
 			});
 		for(Server s : api.getServers()) {
 			s.banUser(usr);
