@@ -73,6 +73,7 @@ public class Main {
 		BufferedWriter bw = new BufferedWriter(fwrite);
 		
 		try {
+			  bw.newLine();
 		      fwrite.write("User banned: "+usr.getDiscriminatedName());
 		      bw.newLine();
 		      fwrite.close();
