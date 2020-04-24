@@ -5,7 +5,6 @@ import java.io.FileWriter;
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.NoSuchElementException;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -39,9 +38,11 @@ public class Main {
 					try {
 						User usr = event.getMessage().getAuthor().asUser().get();
 						banUser(api, usr);
-					} catch(NoSuchElementException e) {
+					} 
+					
+					catch(Exception e) {
 						System.out.println("oOf. I tried, but i couldnt ban. Please check that i have the ban or admin perm.");
-					}
+					} 
 				}
 			}
 		});
@@ -52,9 +53,9 @@ public class Main {
     }
 	
 	
-	public static void banUser(DiscordApi api, User usr) {  //actually bans them everywhere + says it to bot feed
+	public static void banUser(DiscordApi api, User usr) throws FileNotFoundException {  //actually bans them everywhere + says it to bot feed
 		System.out.println("Goodbye, "+usr.getDiscriminatedName());
-		api.getServerTextChannelById(617028579611377674L).ifPresent(channel -> {
+		api.getServerTextChannelById(getChannel()+"L").ifPresent(channel -> {
 			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName()+":honey_pot:");
 			});
 		for(Server s : api.getServers()) {
@@ -90,6 +91,14 @@ public class Main {
 	     String token = sc.nextLine();
 	     sc.close();
 	     return token;
+	}
+	
+	public static String getChannel() throws FileNotFoundException {
+		 File fi = new File("channel.txt"); // put your channel ID in channel.txt
+	     Scanner sc = new Scanner(fi);
+	     String channel = sc.nextLine();
+	     sc.close();
+	     return channel;
 	}
 	
 	
