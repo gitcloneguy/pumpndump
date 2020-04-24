@@ -14,3 +14,8 @@ create a new folder (name is irrelevant) and download the jar, and the other fil
 #### compiling way 
 
 clone, then go into it and run ```mvn install``` then cd into ```target```, and edit the file token.txt, remove all text, and put your token on the first line. Now run pumpndump-x.x.x-jar-with-dependencies.jar, with ```java -jar pumpndump-x.x.x-jar-with-dependencies.jar``` make sure to change the x.x.x with the current number.
+
+
+# variables 
+
+the variable text documents are: token.txt, banlog.txt (write-only), and soon to come, channel.txt
