@@ -57,13 +57,14 @@ public class Main {
 	public static void banUser(DiscordApi api, User usr) throws FileNotFoundException {  //actually bans them everywhere + says it to bot feed
 		System.out.println("Goodbye, "+usr.getDiscriminatedName());
 		api.getServerTextChannelById(getChannel()).ifPresent(channel -> {
-			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName()+":honey_pot:");
+			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName());
 			});
 		for(Server s : api.getServers()) {
 			s.banUser(usr);
 			try {
 				logToFile(usr, api);
-			} catch (IOException e) {
+			} 
+			catch (IOException e) {
 				e.printStackTrace();
 			}
 		}
@@ -80,7 +81,8 @@ public class Main {
 		      bw.newLine();
 		      fwrite.close();
 		     
-		    } catch (IOException e) {
+		    } 
+		      catch (IOException e) {
 		      System.out.println("oOf. something oOOOfed.");
 		      e.printStackTrace();
 		    }
