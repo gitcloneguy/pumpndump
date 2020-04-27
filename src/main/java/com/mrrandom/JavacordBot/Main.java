@@ -49,13 +49,14 @@ public class Main {
 		
         System.out.println("Logged in! Part of "+api.getServers().size()+" servers");
         System.out.println("Invite link is: "+api.createBotInvite());
+        System.out.println("writing to :"+getChannel());
         
     }
 	
 	
 	public static void banUser(DiscordApi api, User usr) throws FileNotFoundException {  //actually bans them everywhere + says it to bot feed
 		System.out.println("Goodbye, "+usr.getDiscriminatedName());
-		api.getServerTextChannelById(getChannel()+"L").ifPresent(channel -> {
+		api.getServerTextChannelById(getChannel()).ifPresent(channel -> {
 			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName()+":honey_pot:");
 			});
 		for(Server s : api.getServers()) {
