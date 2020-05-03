@@ -9,7 +9,7 @@ Based on Pop101's Trivia Buster (because there's a big logical connection lol)
 
 The lazy way is not recommended, because it dosen't let you see what code you are running. Anyways, if you do decide to continue, here's how:
 
-create a new folder (name is irrelevant) and download the jar, and the other files (banlog.txt, token.txt) and put them in the folder. Edit the file token.txt, remove all text, and put your token on the first line. do the same with channel.txt, except add in the channel ID**** ALSO ADD WITH NO SPACE RIGHT NEXT TO THE ID THE LETTER L IN ALL CAPS**** .Now run pumpndump-x.x.x-jar-with-dependencies.jar, with
+create a new folder (name is irrelevant) and download the jar, and the other files (banlog.txt, token.txt) and put them in the folder. Edit the file token.txt, remove all text, and put your token on the first line. do the same with channel.txt, except add in the channel ID. Now run pumpndump-x.x.x-jar-with-dependencies.jar, with
 ```java -jar pumpndump-x.x.x-jar-with-dependencies.jar``` 
 make sure to change the x.x.x with the current number.
 
@@ -19,7 +19,7 @@ clone, then go into it and run
 ```mvn install``` 
 then  
 ```cd target```,
-and edit the file token.txt, remove all text, and put your token on the first line, do the same with channel.txt, except add in the channel ID**** ALSO ADD WITH NO SPACE RIGHT NEXT TO THE ID THE LETTER L IN ALL CAPS****. Now run pumpndump-x.x.x-jar-with-dependencies.jar, with 
+and edit the file token.txt, remove all text, and put your token on the first line, do the same with channel.txt, except add in the channel ID. Now run pumpndump-x.x.x-jar-with-dependencies.jar, with 
 ```java -jar pumpndump-x.x.x-jar-with-dependencies.jar```
 make sure to change the x.x.x with the current number.
 
