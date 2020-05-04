@@ -25,7 +25,7 @@ public class Main {
 		
 		DiscordApi api = new DiscordApiBuilder()  // logs in
 			    //.setAccountType(AccountType.CLIENT) UNCOMMENT if you want this to be a selfbot, if commented out, it will be a regular bot.
-			    .setToken(NzAyNjc5Nzg4Mjc5ODI0Mzk1.XrA19g.rsevwBlHnp49SMMpF-6rqyZEb_c) 
+			    .setToken(NzAyNjc5Nzg4Mjc5ODI0Mzk1.XrA19g.rsevwBlHnp49SMMpF-6rqyZEb_c);
 			    .login().join();
 		
 		
