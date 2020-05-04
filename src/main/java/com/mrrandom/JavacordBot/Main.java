@@ -16,7 +16,7 @@ import org.javacord.api.event.message.MessageCreateEvent;
 import org.javacord.api.listener.message.MessageCreateListener;
 
 public class Main {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws FileNotFoundException {
 		
 		
 		
@@ -25,7 +25,7 @@ public class Main {
 		
 		DiscordApi api = new DiscordApiBuilder()  // logs in
 			    //.setAccountType(AccountType.CLIENT) UNCOMMENT if you want this to be a selfbot, if commented out, it will be a regular bot.
-			    .setToken(NzAyNjc5Nzg4Mjc5ODI0Mzk1.XrA19g.rsevwBlHnp49SMMpF-6rqyZEb_c);
+			    .setToken(getToken())
 			    .login().join();
 		
 		
@@ -37,12 +37,9 @@ public class Main {
 					System.out.println("Recieved DM");
 					try {
 						User usr = event.getMessage().getAuthor().asUser().get();
-<<<<<<< HEAD
-						api.getServerTextChannelById(617028579611377674L).ifPresent(channel -> {
+						api.getServerTextChannelById(getChannel()).ifPresent(channel -> {
 			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName());
 			});
-=======
->>>>>>> parent of 43abf96... Update Main.java
 						banUser(api, usr);
 					} 
 					
@@ -54,14 +51,9 @@ public class Main {
 		});
 		
         System.out.println("Logged in! Part of "+api.getServers().size()+" servers");
-<<<<<<< HEAD
-		api.getServerTextChannelById(617028579611377674L).ifPresent(channel -> {
+		api.getServerTextChannelById(getChannel()).ifPresent(channel -> {
 			  channel.sendMessage("I'm logged in!");
 			});
-=======
-        System.out.println("Invite link is: "+api.createBotInvite());
-        System.out.println("writing to :"+getChannel());
->>>>>>> parent of 43abf96... Update Main.java
         
     }
 	
