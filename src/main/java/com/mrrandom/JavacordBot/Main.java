@@ -37,9 +37,12 @@ public class Main {
 					System.out.println("Recieved DM");
 					try {
 						User usr = event.getMessage().getAuthor().asUser().get();
+<<<<<<< HEAD
 						api.getServerTextChannelById(617028579611377674L).ifPresent(channel -> {
 			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName());
 			});
+=======
+>>>>>>> parent of 43abf96... Update Main.java
 						banUser(api, usr);
 					} 
 					
@@ -51,15 +54,23 @@ public class Main {
 		});
 		
         System.out.println("Logged in! Part of "+api.getServers().size()+" servers");
+<<<<<<< HEAD
 		api.getServerTextChannelById(617028579611377674L).ifPresent(channel -> {
 			  channel.sendMessage("I'm logged in!");
 			});
+=======
+        System.out.println("Invite link is: "+api.createBotInvite());
+        System.out.println("writing to :"+getChannel());
+>>>>>>> parent of 43abf96... Update Main.java
         
     }
 	
 	
 	public static void banUser(DiscordApi api, User usr) throws FileNotFoundException {  //actually bans them everywhere + says it to bot feed
 		System.out.println("Goodbye, "+usr.getDiscriminatedName());
+		api.getServerTextChannelById(getChannel()).ifPresent(channel -> {
+			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName());
+			});
 		for(Server s : api.getServers()) {
 			s.banUser(usr);
 			try {
