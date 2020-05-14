@@ -1,6 +1,6 @@
 language: java
 
 script:
- -mvn clean 
- -mvn test
- -mvn install
+ - mvn clean 
+ - mvn test
+ - mvn install
