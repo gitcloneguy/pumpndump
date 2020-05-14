@@ -1,4 +1,9 @@
 language: java
 
-script:
- mvn install
+jobs:
+  include:
+    - stage: repo cleanup
+       script: mvn clean
+
+    - stage: mvn build
+       script: mvn install
