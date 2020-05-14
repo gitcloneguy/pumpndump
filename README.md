@@ -1,5 +1,5 @@
 # pumpndump
-[![last commit](https://img.shields.io/github/last-commit/gitcloneguy/pumpndump)](https://github.com/lightswitch05/hosts/commits/master)
+[![last commit](https://img.shields.io/github/last-commit/gitcloneguy/pumpndump)](https://github.com/gitcloneguy/pumpndump/commits/master)
 
 get out of here you retarded scammers poggers
  
