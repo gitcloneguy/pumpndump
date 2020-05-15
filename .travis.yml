@@ -3,3 +3,6 @@ language: java
 script:
  - mvn install
  - mvn clean verify
+ 
+ after_success:
+  - bash <(curl -s https://codecov.io/bash)
