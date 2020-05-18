@@ -2,7 +2,17 @@ language: java
 
 script:
  - mvn install
- - mvn clean verify
- 
-after_success:
- - bash <(curl -s https://codecov.io/bash)
+
+
+deploy:
+  provider: releases
+  api_key:
+   secure: "D+ZhGAIdNpI7Q+HlP16c/C6RxjhTu29EpMNoQ6sqbcIcNmNDwrdQewPmAwbKn37+VWyaRg0c6AB9j8x7BhbhLnMJS3lw+AFpiESfwKmCwPEa6OsNm/bw91UDxvj8QYRRgUHvufJs9E4agh0lIjhO+T622inZX+xa/vtWLQjgt+Nluo/5wdZVDRDp/UbkRtCgfctrCmGfIv+5k8QGACJ5CCIOETiZT7eI5mM2t5K7eNCarKh764S31dm/3KC5G0iAPVfGSuvz1fcvLWN2An3gdolcvu9aFoXRixv34LXhYEd1eYq4qyJW4F1EspowjwDp4pLzs1ln0XsQZY7W8xDqs0huQ/b8aKaw9zEKYUdrGHZxfOHxYqBy32GiVaQeKSGwPiFHSJTUlfFRQOLQcVtZk0lUq2C/FCF6CNXfYRj3ESs50O2wRSHuT8rECIh9ge8OFefC08GIgUzeCcXlqV+dJkQIrCq20qAl3JgDuaoNIuGCIr74b5HbBA1QweSjDMKlKK7N5nrEwcOEoAMLpfRerCE1qvV9BE6jIB95/U9c+PzQepQJzt/kZHAzOW7UiCKrA91qmO3ZcsXXYycBWGFDYnhBEU9N+wLb4qTeHXMr80FNgjGIz0tqE1RqB3+aFcaSHwTFDLlAgJBqDHzmT+keaPdhaJ17yzK0a7BIvBgZxO0="
+  file:
+    - "target/pumpndump-1.3.0-jar-with-dependencies.jar"
+    - "target/banlist.txt"
+    - "target/channel.txt"
+    - "target/token.txt"
+  skip_cleanup: true
+  on:
+   tags: false
