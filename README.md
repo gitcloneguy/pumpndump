@@ -1,7 +1,9 @@
 # pumpndump
 [![last commit](https://img.shields.io/github/last-commit/gitcloneguy/pumpndump)](https://github.com/gitcloneguy/pumpndump/commits/master)
 
-get out of here you retarded scammers poggers
+get out of here you retarded scammers
+
+
  
 Based on Pop101's Trivia Buster (because there's a big logical connection lol) big lol
 
