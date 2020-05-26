@@ -46,10 +46,17 @@ public class Main {
 		final double minutes = 2.0;
 		final double threshold = 10;
 		
-		UserJoining joinManager = new UserJoining((long) (minutes*60*1_000_000_000L)); //convert minutes to nanoseconds
+		HashMap<Server, UserJoining> joinManagers = new HashMap<Server, UserJoining>();
 		api.addServerMemberJoinListener(new ServerMemberJoinListener() {
 			@Override
 			public void onServerMemberJoin(ServerMemberJoinEvent event) {
+				Server s = event.getServer();
+				if(!joinManagers.containsKey(s))
+					joinManagers.put(s, new UserJoining((long) (minutes*60*1_000_000_000L)));
+				
+				
+				UserJoining joinManager = joinManagers.get(s);
+				
 				joinManager.addUser(event.getUser());
 				if(joinManager.getNumberOfUsersInLeeway() > threshold)
 					for(User u : joinManager.getUsersInLeeway())
