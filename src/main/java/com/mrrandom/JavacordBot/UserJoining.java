@@ -55,7 +55,7 @@ public class UserJoining {
 		}
 		public UserTimestamp(User usr, long time) {
 			user = usr;
-			timestamp = time
+			timestamp = time;
 		}
 		public User getUser() {
 			return user;
