@@ -17,12 +17,6 @@ import org.javacord.api.listener.message.MessageCreateListener;
 
 public class Main {
 	public static void main(String[] args) throws FileNotFoundException {
-		
-		
-		
-
-	
-		
 		DiscordApi api = new DiscordApiBuilder()  // logs in
 			    //.setAccountType(AccountType.CLIENT) UNCOMMENT if you want this to be a selfbot, if commented out, it will be a regular bot.
 			    .setToken(getToken())
@@ -38,11 +32,10 @@ public class Main {
 					try {
 						User usr = event.getMessage().getAuthor().asUser().get();
 						api.getServerTextChannelById(getChannel()).ifPresent(channel -> {
-			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName());
-			});
+						  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName());
+						});
 						banUser(api, usr);
 					} 
-					
 					catch(Exception e) {
 						System.out.println("oOf. I tried, but i couldnt ban. Please check that i have the ban or admin perm.");
 					} 
@@ -53,7 +46,7 @@ public class Main {
         System.out.println("Logged in! Part of "+api.getServers().size()+" servers");
 		api.getServerTextChannelById(getChannel()).ifPresent(channel -> {
 			  channel.sendMessage("I'm logged in!");
-			});
+		});
         
     }
 	
@@ -62,7 +55,8 @@ public class Main {
 		System.out.println("Goodbye, "+usr.getDiscriminatedName());
 		api.getServerTextChannelById(getChannel()).ifPresent(channel -> {
 			  channel.sendMessage("Goodbye, " + usr.getDiscriminatedName());
-			});
+		});
+		
 		for(Server s : api.getServers()) {
 			s.banUser(usr);
 			try {
@@ -75,7 +69,6 @@ public class Main {
 	}
 	
 	public static void logToFile(User usr, DiscordApi api) throws IOException  {
-		
 		FileWriter fwrite = new FileWriter("banlog.txt");
 		BufferedWriter bw = new BufferedWriter(fwrite);
 		
