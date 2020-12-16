@@ -24,7 +24,14 @@ public class Main {
 			    //.setAccountType(AccountType.CLIENT) UNCOMMENT if you want this to be a selfbot, if commented out, it will be a regular bot.
 			    .setToken(getToken())
 			    .login().join();
-		
+
+
+
+				api.addMessageCreateListener(event -> {
+    if (event.getMessageContent().startsWith("!ban").event.getMessage().getMentionedUsers.get(f)) {
+        event.getChannel().sendMessage(banUser(api, f));
+    }
+});
         //This listener does the busting
 		api.addMessageCreateListener(new MessageCreateListener() {
 			@Override
