@@ -26,13 +26,15 @@ public class Main {
 			    .login().join();
 
 				//bans scrubs with !ban
-		api.addMessageCreateListener(event -> {
+		/*
+			api.addMessageCreateListener(event -> {
 			if (event.getMessageContent().startsWith("!ban") && !event.getMessage().getMentionedUsers().isEmpty()) {
 			int f = 0;
 		banUser(api, event.getMessage().getMentionedUsers().get(f));
 			event.getChannel().sendMessage("The user has been banned");
 		}
 	});
+	*/
         //This listener does the busting
 		api.addMessageCreateListener(new MessageCreateListener() {
 			@Override
