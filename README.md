@@ -19,6 +19,8 @@ make sure to change the x.x.x with the current number.
 
 #### compiling way 
 
+###### YOU NEED MAVEN FOR THIS
+
 clone, then go into it and run
 ```mvn install``` 
 then  
